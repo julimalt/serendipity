@@ -1,0 +1,190 @@
+body {
+  font: "Alata", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+.fondo {
+  background-image: url(../images/travel7.png);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center; }
+
+.compartido {
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  background-size: 100% auto;
+  height: 15vh;
+  background-image: linear-gradient(to left, #36a3ce, #046ee7); }
+
+.posicionMenu {
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.center {
+  justify-content: center;
+  align-items: center; }
+
+.logo {
+  width: 200px; }
+
+.principal {
+  text-decoration: none;
+  padding: 10px; }
+
+.inicio {
+  position: relative;
+  top: 75%; }
+  .inicio .lugar {
+    margin: 5px; }
+  .inicio .fecha {
+    margin: 5px; }
+  .inicio .btn {
+    margin: 5px; }
+
+.provincias {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    display: inline; }
+
+h1 {
+  text-align: center;
+  margin: 0%;
+  position: relative;
+  top: 1%;
+  color: #474747;
+  font-size: 2rem; }
+
+strong {
+  font-size: 1.3rem; }
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 2rem 25rem; }
+
+.instagram {
+  justify-content: flex-end;
+  padding-right: 30%; }
+
+.listaLugares {
+  width: 900px;
+  height: 900px; }
+
+.principal {
+  color: white;
+  font-size: 1.2rem; }
+
+.provincias {
+  color: #0c0c0c;
+  font-size: 1.3rem; }
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px 50px;
+  margin: 40px; }
+  .grilla .itemGrilla {
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+
+.provincia-1 {
+  background-color: #e29578; }
+
+.provincia-2 {
+  background-color: #f8c0ae; }
+
+.provincia-3 {
+  background-color: #a7daeb; }
+
+.provincia-4 {
+  background-color: #83c5be; }
+
+.provincia-5 {
+  background-color: #006d77; }
+
+.provincia-6 {
+  background-color: #dfce6f; }
+
+.provincia-7 {
+  background-color: #fcbf49; }
+
+.provincia-8 {
+  background-color: #d62828; }
+
+.provincia-9 {
+  background-color: #3cafa0; }
+
+.provincia-10 {
+  background-color: #0f92d8; }
+
+.provincia-11 {
+  background-color: #368eac; }
+
+.provincia-12 {
+  background-color: #118ab2; }
+
+.provincia-13 {
+  background-color: #06d6a0; }
+
+.provincia-14 {
+  background-color: #ffd166; }
+
+.provincia-15 {
+  background-color: #ef476f; }
+
+.provincia-16 {
+  background-color: #81b29a; }
+
+.provincia-17 {
+  background-color: #e07a5f; }
+
+.provincia-18 {
+  background-color: #e04d25; }
+
+@media screen and (max-width: 600px) {
+  .provincias {
+    font-size: 0.8em; }
+  .principal {
+    font-size: 0.5em; }
+  .inicio {
+    position: relative;
+    top: 45%; }
+  .logo {
+    width: 50px; }
+  .grilla {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 6%; }
+  .fondo {
+    height: 83vh; }
+  .compartido {
+    height: 8.5vh; } }
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .provincias {
+    font-size: 1em; }
+  .principal {
+    font-size: 0.8em; }
+  .inicio {
+    position: relative;
+    top: 55%; }
+  .logo {
+    width: 100px; }
+  .grilla {
+    grid-template-columns: repeat(4, 1fr); } }

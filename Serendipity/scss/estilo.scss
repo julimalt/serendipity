@@ -1,0 +1,195 @@
+@import "colores";
+@import "tipografia";
+
+body {
+  font: $fuentePrincipal;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.fondo {
+  background-image: url(../images/travel7.png);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.compartido {
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  background-size: 100% auto;
+  height: 15vh;
+  background-image: linear-gradient(to left, rgb(54, 163, 206), #046ee7);
+}
+
+.posicionMenu {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+}
+
+.principal {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.inicio {
+  position: relative;
+  top: 75%;
+
+  .lugar {
+    margin: 5px;
+  }
+
+  .fecha {
+    margin: 5px;
+  }
+
+  .btn {
+    margin: 5px;
+  }
+}
+
+.provincias {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin: 0%;
+  position: relative;
+  top: 1%;
+  color: $gris;
+  font-size: $medida3;
+}
+
+strong {
+  font-size: $medida2;
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 2rem 25rem;
+}
+
+.instagram {
+  justify-content: flex-end;
+  padding-right: 30%;
+}
+
+.listaLugares {
+  width: 900px;
+  height: 900px;
+}
+
+.principal {
+  color: $blanco;
+  font-size: $medida1;
+}
+
+.provincias {
+  color: $negro;
+  font-size: $medida2;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px 50px;
+  margin: 40px;
+
+  .itemGrilla {
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+$colores: $neuquen, $rioNegro, $cordoba, $jujuy, $sanLuis, $misiones, $entreRios,
+  $santaCruz, $tierraDelFuego, $chubut, $mendoza, $sanJuan, $laRioja, $tucuman,
+  $corrientes, $santaFe, $santiagoDelEstero, $buenosAires;
+
+@for $posicion from 1 through 18 {
+  .provincia-#{$posicion} {
+    background-color: nth($colores, $posicion);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .provincias {
+    font-size: 0.8em;
+  }
+  .principal {
+    font-size: 0.5em;
+  }
+
+  .inicio {
+    position: relative;
+    top: 45%;
+  }
+
+  .logo {
+    width: 50px;
+  }
+  .grilla {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 6%;
+  }
+  .fondo {
+    height: 83vh;
+  }
+
+  .compartido {
+    height: 8.5vh;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .provincias {
+    font-size: 1em;
+  }
+  .principal {
+    font-size: 0.8em;
+  }
+
+  .inicio {
+    position: relative;
+    top: 55%;
+  }
+
+  .logo {
+    width: 100px;
+  }
+  .grilla {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
