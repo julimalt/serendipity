@@ -37,7 +37,7 @@ body {
 
 .inicio {
   position: relative;
-  top: 75%; }
+  top: 65%; }
   .inicio .lugar {
     margin: 5px; }
   .inicio .fecha {
@@ -165,7 +165,7 @@ strong {
     font-size: 0.5em; }
   .inicio {
     position: relative;
-    top: 45%; }
+    top: 35%; }
   .logo {
     width: 50px; }
   .grilla {
@@ -183,7 +183,7 @@ strong {
     font-size: 0.8em; }
   .inicio {
     position: relative;
-    top: 55%; }
+    top: 45%; }
   .logo {
     width: 100px; }
   .grilla {
