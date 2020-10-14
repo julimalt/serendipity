@@ -21,7 +21,6 @@ body {
   display: flex;
   flex-direction: row;
   background-size: 100% auto;
-  height: 15vh;
   background-image: linear-gradient(to left, rgb(54, 163, 206), #046ee7);
 }
 
@@ -36,12 +35,14 @@ body {
 }
 
 .logo {
-  width: 200px;
+  width: 150px;
 }
 
 .principal {
   text-decoration: none;
   padding: 10px;
+  color: $blanco;
+  font-size: $medida1;
 }
 
 .inicio {
@@ -65,16 +66,6 @@ body {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-
-  li {
-    display: inline;
-  }
-}
-
 h1 {
   text-align: center;
   margin: 0%;
@@ -96,6 +87,14 @@ strong {
   padding: 2rem 25rem;
 }
 
+.informacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 1rem;
+}
+
 .instagram {
   justify-content: flex-end;
   padding-right: 30%;
@@ -106,9 +105,8 @@ strong {
   height: 900px;
 }
 
-.principal {
-  color: $blanco;
-  font-size: $medida1;
+.final {
+  height: 14vh;
 }
 
 .provincias {
@@ -122,6 +120,7 @@ strong {
   grid-template-rows: repeat(3, 1fr);
   gap: 20px 50px;
   margin: 40px;
+  padding-left: 80px;
 
   .itemGrilla {
     width: 130px;
@@ -168,17 +167,14 @@ $colores: $neuquen, $rioNegro, $cordoba, $jujuy, $sanLuis, $misiones, $entreRios
     height: 83vh;
   }
 
-  .compartido {
-    height: 8.5vh;
+  .datos {
+    padding: 2rem 15rem;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
   .provincias {
     font-size: 1em;
-  }
-  .principal {
-    font-size: 0.8em;
   }
 
   .inicio {
@@ -191,5 +187,8 @@ $colores: $neuquen, $rioNegro, $cordoba, $jujuy, $sanLuis, $misiones, $entreRios
   }
   .grilla {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .datos {
+    padding: 2rem 15rem;
   }
 }

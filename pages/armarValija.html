@@ -27,51 +27,85 @@
   </head>
 
   <body>
-    <nav class="compartido posicionMenu">
-      <img class="logo" src="../images/logo.png" alt="Logo" />
-      <div style="margin-right: 15px">
-        <a class="principal" href="../index.html">Home</a>
-        <a class="principal" href="armarValija.html">Armar Valija</a>
-        <a class="principal" href="mapas.html">Mapas</a>
-        <a class="principal" href="lugaresTuristicos.html"
-          >Lugares Turísticos</a
+    <div class="container-fluid">
+      <div class="row">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark compartido posicionMenu col-lg-12 col-md-12 col-sm-12 col-12"
         >
-        <a class="principal" href="datosUtiles.html">Datos Útiles</a>
-      </div>
-    </nav>
-    <div class="datos">
-      <div class="lugar">
-        <strong>1. Elegi el lugar al que vas a viajar!</strong>
-        <select class="custom-select">
-          <option selected>Lugar</option>
-          <option value="2">Rio Negro</option>
-          <option value="3">Córdoba</option>
-          <option value="4">Jujuy</option>
-          <option value="5">San Luis</option>
-          <option value="6">Misiones</option>
-          <option value="7">Entre Ríos</option>
-          <option value="8">Santa Cruz</option>
-          <option value="9">Tierra del Fuego</option>
-          <option value="10">Chubut</option>
-          <option value="11">Mendoza</option>
-          <option value="12">San Juan</option>
-          <option value="13">La Rioja</option>
-          <option value="14">Tucumán</option>
-          <option value="15">Corrientes</option>
-          <option value="16">Santa Fe</option>
-          <option value="17">Santiago del Estero</option>
-          <option value="18">Buenos Aires</option>
-          <option value="19">Neuquen</option>
-        </select>
-      </div>
-      <div class="fecha">
-        <strong>2. Elegi la fecha del viaje!</strong>
-        <form>
-          <input type="date" id="fecha" name="fecha" required="required" />
-        </form>
-      </div>
-      <div class="opciones">
-        <strong>3. Esto podes poner en tu valija!</strong>
+          <img class="logo" src="../images/logo.png" alt="Logo" />
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarColor02"
+            aria-controls="navbarColor02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse show" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="principal" href="../index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="principal" href="armarValija.html">Armar Valija</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="principal" href="mapas.html">Mapas</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="principal" href="lugaresTuristicos.html"
+                  >Lugares Turísticos</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="principal" href="datosUtiles.html">Datos Útiles</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="datos">
+          <div class="lugar">
+            <strong>1. Elegi el lugar al que vas a viajar!</strong>
+            <select class="custom-select">
+              <option selected>Lugar</option>
+              <option value="2">Rio Negro</option>
+              <option value="3">Córdoba</option>
+              <option value="4">Jujuy</option>
+              <option value="5">San Luis</option>
+              <option value="6">Misiones</option>
+              <option value="7">Entre Ríos</option>
+              <option value="8">Santa Cruz</option>
+              <option value="9">Tierra del Fuego</option>
+              <option value="10">Chubut</option>
+              <option value="11">Mendoza</option>
+              <option value="12">San Juan</option>
+              <option value="13">La Rioja</option>
+              <option value="14">Tucumán</option>
+              <option value="15">Corrientes</option>
+              <option value="16">Santa Fe</option>
+              <option value="17">Santiago del Estero</option>
+              <option value="18">Buenos Aires</option>
+              <option value="19">Neuquen</option>
+            </select>
+          </div>
+          <div class="fecha">
+            <strong>2. Elegi la fecha del viaje!</strong>
+            <form>
+              <input type="date" id="fecha" name="fecha" required="required" />
+            </form>
+          </div>
+          <div class="opciones">
+            <strong>3. Esto podes poner en tu valija!</strong>
+          </div>
+        </div>
       </div>
     </div>
   </body>
