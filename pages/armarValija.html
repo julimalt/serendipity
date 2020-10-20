@@ -71,7 +71,7 @@
             </ul>
           </div>
         </nav>
-        <div class="datos">
+        <div class="datos col-lg-12 col-md-12 col-sm-12 col-12">
           <div class="lugar">
             <strong>1. Elegi el lugar al que vas a viajar!</strong>
             <select class="custom-select">
@@ -96,19 +96,165 @@
               <option value="19">Neuquen</option>
             </select>
           </div>
-          <div class="fecha">
-            <strong>2. Elegi la fecha del viaje!</strong>
-            <form>
-              <input type="date" id="fecha" name="fecha" required="required" />
-            </form>
-          </div>
           <div class="opciones">
-            <strong>3. Esto podes poner en tu valija!</strong>
+            <strong>2. Elegí la estación!</strong>
+          </div>
+          <div>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-warning"
+              data-toggle="modal"
+              data-target="#otoño"
+            >
+              Otoño
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="otoño"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Esto puede ir en tu valija!
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <span>- 1 Campera</span> <br /><span>- 4 Remeras </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#invierno"
+            >
+              Invierno
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="invierno"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Esto puede ir en tu valija!
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">...</div>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-toggle="modal"
+              data-target="#primavera"
+            >
+              Primavera
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="primavera"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Esto puede ir en tu valija!
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">...</div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-toggle="modal"
+              data-target="#verano"
+            >
+              Verano
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="verano"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Esto puede ir en tu valija!
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">...</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+
   <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

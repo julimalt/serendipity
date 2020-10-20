@@ -3,7 +3,8 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background-color: #b8e5f7; }
 
 .fondo {
   background-image: url(../images/travel7.png);
@@ -17,11 +18,18 @@ body {
   display: flex;
   flex-direction: row;
   background-size: 100% auto;
-  background-image: linear-gradient(to left, #36a3ce, #046ee7); }
+  background-image: linear-gradient(to right, #4facfe 0%, #6ed3f1 100%); }
 
 .posicionMenu {
   justify-content: space-between;
   align-items: flex-end; }
+
+.card-img-top {
+  height: 40vh;
+  width: 46.8vw; }
+
+.card-body {
+  height: 50vh; }
 
 .center {
   justify-content: center;
@@ -30,19 +38,20 @@ body {
 .logo {
   width: 150px; }
 
+a:link,
+a:visited,
+a:active {
+  text-decoration: none; }
+
 .principal {
-  text-decoration: none;
   padding: 10px;
   color: white;
   font-size: 1.2rem; }
 
 .inicio {
   position: relative;
-  top: 65%; }
-  .inicio .lugar {
-    margin: 5px; }
-  .inicio .fecha {
-    margin: 5px; }
+  top: 65%;
+  text-align: center; }
   .inicio .btn {
     margin: 5px; }
 
@@ -63,9 +72,9 @@ strong {
 .datos {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
   text-align: center;
-  padding: 2rem 25rem; }
+  padding: 2rem; }
 
 .informacion {
   display: flex;
@@ -166,26 +175,26 @@ strong {
     font-size: 0.5em; }
   .inicio {
     position: relative;
-    top: 35%; }
+    top: 45%; }
   .logo {
     width: 50px; }
   .grilla {
     grid-template-columns: repeat(2, 1fr);
     margin: 6%; }
   .fondo {
-    height: 83vh; }
-  .datos {
-    padding: 2rem 15rem; } }
+    height: 79vh; } }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
   .provincias {
     font-size: 1em; }
   .inicio {
     position: relative;
-    top: 45%; }
+    top: 65%; }
+  .fondo {
+    height: 75vh; }
   .logo {
     width: 100px; }
   .grilla {
-    grid-template-columns: repeat(4, 1fr); }
-  .datos {
-    padding: 2rem 15rem; } }
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 30px;
+    padding-left: 40px; } }

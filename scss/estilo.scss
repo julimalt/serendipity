@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: #b8e5f7;
 }
 
 .fondo {
@@ -21,12 +22,20 @@ body {
   display: flex;
   flex-direction: row;
   background-size: 100% auto;
-  background-image: linear-gradient(to left, rgb(54, 163, 206), #046ee7);
+  background-image: linear-gradient(to right, #4facfe 0%, #6ed3f1 100%);
 }
 
 .posicionMenu {
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.card-img-top {
+  height: 40vh;
+  width: 46.8vw;
+}
+.card-body {
+  height: 50vh;
 }
 
 .center {
@@ -38,8 +47,13 @@ body {
   width: 150px;
 }
 
-.principal {
+a:link,
+a:visited,
+a:active {
   text-decoration: none;
+}
+
+.principal {
   padding: 10px;
   color: $blanco;
   font-size: $medida1;
@@ -48,14 +62,7 @@ body {
 .inicio {
   position: relative;
   top: 65%;
-
-  .lugar {
-    margin: 5px;
-  }
-
-  .fecha {
-    margin: 5px;
-  }
+  text-align: center;
 
   .btn {
     margin: 5px;
@@ -82,9 +89,9 @@ strong {
 .datos {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
   text-align: center;
-  padding: 2rem 25rem;
+  padding: 2rem;
 }
 
 .informacion {
@@ -153,7 +160,7 @@ $colores: $neuquen, $rioNegro, $cordoba, $jujuy, $sanLuis, $misiones, $entreRios
 
   .inicio {
     position: relative;
-    top: 35%;
+    top: 45%;
   }
 
   .logo {
@@ -164,11 +171,7 @@ $colores: $neuquen, $rioNegro, $cordoba, $jujuy, $sanLuis, $misiones, $entreRios
     margin: 6%;
   }
   .fondo {
-    height: 83vh;
-  }
-
-  .datos {
-    padding: 2rem 15rem;
+    height: 79vh;
   }
 }
 
@@ -179,16 +182,17 @@ $colores: $neuquen, $rioNegro, $cordoba, $jujuy, $sanLuis, $misiones, $entreRios
 
   .inicio {
     position: relative;
-    top: 45%;
+    top: 65%;
   }
-
+  .fondo {
+    height: 75vh;
+  }
   .logo {
     width: 100px;
   }
   .grilla {
     grid-template-columns: repeat(4, 1fr);
-  }
-  .datos {
-    padding: 2rem 15rem;
+    gap: 20px 30px;
+    padding-left: 40px;
   }
 }
