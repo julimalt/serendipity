@@ -20,16 +20,12 @@ body {
   background-size: 100% auto;
   background-image: linear-gradient(to right, #4facfe 0%, #6ed3f1 100%); }
 
+.row {
+  justify-content: center; }
+
 .posicionMenu {
   justify-content: space-between;
   align-items: flex-end; }
-
-.card-img-top {
-  height: 40vh;
-  width: 46.8vw; }
-
-.card-body {
-  height: 50vh; }
 
 .center {
   justify-content: center;
@@ -103,8 +99,7 @@ strong {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 20px 50px;
-  margin: 40px;
-  padding-left: 80px; }
+  margin: 40px; }
   .grilla .itemGrilla {
     width: 130px;
     height: 130px;
@@ -167,6 +162,18 @@ strong {
 
 .provincia-18 {
   background-color: #e04d25; }
+
+.button1 {
+  background-color: #e04d25; }
+
+.button2 {
+  background-color: #0f92d8; }
+
+.button3 {
+  background-color: #06d6a0; }
+
+.button4 {
+  background-color: #f8c0ae; }
 
 @media screen and (max-width: 600px) {
   .provincias {
