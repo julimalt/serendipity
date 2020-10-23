@@ -13,6 +13,14 @@ body {
   background-size: 100% auto;
   background-position: center; }
 
+.slider {
+  height: 70vh;
+  width: 90vw;
+  margin: 0.8rem; }
+
+.carousel-caption {
+  background-color: #0b0b0b73; }
+
 .compartido {
   background-repeat: no-repeat;
   display: flex;
@@ -189,7 +197,10 @@ strong {
     grid-template-columns: repeat(2, 1fr);
     margin: 6%; }
   .fondo {
-    height: 79vh; } }
+    height: 79vh; }
+  .slider {
+    height: 50vh;
+    width: 100vw; } }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
   .provincias {

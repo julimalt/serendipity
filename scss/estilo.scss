@@ -18,6 +18,16 @@ body {
   background-position: center;
 }
 
+.slider {
+  height: 70vh;
+  width: 90vw;
+  margin: 0.8rem;
+}
+
+.carousel-caption {
+  background-color: #0b0b0b73;
+}
+
 .compartido {
   background-repeat: no-repeat;
   display: flex;
@@ -176,6 +186,10 @@ $colores: $buenosAires, $chubut, $laRioja, $rioNegro;
   }
   .fondo {
     height: 79vh;
+  }
+  .slider {
+    height: 50vh;
+    width: 100vw;
   }
 }
 
