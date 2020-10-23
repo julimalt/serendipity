@@ -32,7 +32,9 @@
         <nav
           class="navbar navbar-expand-lg navbar-light compartido posicionMenu col-lg-12 col-md-12 col-sm-12 col-12"
         >
-          <img class="logo" src="../images/logo.png" alt="Logo" />
+          <a href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="Logo" />
+          </a>
           <button
             class="navbar-toggler collapsed"
             type="button"
@@ -70,27 +72,33 @@
         <div class="datos col-lg-12 col-md-12 col-sm-12 col-12">
           <div class="lugar">
             <strong>1. Elegi el lugar al que vas a viajar!</strong>
-            <select class="custom-select">
-              <option selected>Lugar</option>
-              <option value="2">Rio Negro</option>
-              <option value="3">Córdoba</option>
-              <option value="4">Jujuy</option>
-              <option value="5">San Luis</option>
-              <option value="6">Misiones</option>
-              <option value="7">Entre Ríos</option>
-              <option value="8">Santa Cruz</option>
-              <option value="9">Tierra del Fuego</option>
-              <option value="10">Chubut</option>
-              <option value="11">Mendoza</option>
-              <option value="12">San Juan</option>
-              <option value="13">La Rioja</option>
-              <option value="14">Tucumán</option>
-              <option value="15">Corrientes</option>
-              <option value="16">Santa Fe</option>
-              <option value="17">Santiago del Estero</option>
-              <option value="18">Buenos Aires</option>
-              <option value="19">Neuquen</option>
-            </select>
+
+            <div class="col-auto my-2">
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect"
+                >Preference</label
+              >
+              <select class="custom-select mr-sm-5" id="inlineFormCustomSelect">
+                <option selected>Lugar</option>
+                <option value="2">Rio Negro</option>
+                <option value="3">Córdoba</option>
+                <option value="4">Jujuy</option>
+                <option value="5">San Luis</option>
+                <option value="6">Misiones</option>
+                <option value="7">Entre Ríos</option>
+                <option value="8">Santa Cruz</option>
+                <option value="9">Tierra del Fuego</option>
+                <option value="10">Chubut</option>
+                <option value="11">Mendoza</option>
+                <option value="12">San Juan</option>
+                <option value="13">La Rioja</option>
+                <option value="14">Tucumán</option>
+                <option value="15">Corrientes</option>
+                <option value="16">Santa Fe</option>
+                <option value="17">Santiago del Estero</option>
+                <option value="18">Buenos Aires</option>
+                <option value="19">Neuquen</option>
+              </select>
+            </div>
           </div>
           <div class="opciones">
             <strong>2. Elegí la estación!</strong>
